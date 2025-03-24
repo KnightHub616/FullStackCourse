@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+
+    <div id="result"></div>
+
+    <script>
+      function convertTemperature() {
+        const fahrenheit = prompt("Enter a temperature in Fahrenheit:");
+        const celsius = ((fahrenheit - 32) * 5) / 9;
+
+        let description;
+        if (celsius < 0) {
+          description = "very cold";
+        } else if (celsius < 10) {
+          description = "cold";
+        } else if (celsius < 20) {
+          description = "comfortable";
+        } else if (celsius < 30) {
+          description = "warm";
+        } else {
+          description = "hot";
+        }
+
+        const resultElement = document.getElementById("result");
+        resultElement.textContent = `${fahrenheit}°F is ${celsius.toFixed(
+          2
+        )}°C. That's ${description}.`;
+      }
+    </script>
+  </body>
+</html>

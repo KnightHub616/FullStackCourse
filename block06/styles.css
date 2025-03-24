@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section-header {
+  font-size: 1.5em;
+  color: #2e3032;
+}
+.section-header {
+  background-color: #1b879b;
+  padding: 5px;
+}
+img {
+  padding: 50px;
+}
+.image-size {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
