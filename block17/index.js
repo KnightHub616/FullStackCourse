@@ -1,5 +1,6 @@
 // Complete the Numbers class below
 // the constructor has already been provided
+// fix commit message
 class Numbers {
   constructor(data) {
     //data can either be a string or an array of numbers
