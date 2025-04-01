@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer="" src="/javascript.js"></script>
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <h1>Josue Chavez</h1>
+      </div>
+
+      <div id="menu">
+        <a href="index.html">Home |</a>
+        <a href="about.html">The Process |</a>
+        <a href="portfolio.html">My Success Stories |</a>
+        <a class="active" href="contact.html">Contact </a>
+      </div>
+    </nav>
+
+    <main>
+        <h5>Contact Me:</h5>
+        <form id="form">
+            <div>
+                <label for="name">Name:</label><br>
+                <input id="name" type="text" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" name="email">
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </main>
+        <script src="javascript.js"></script>
+    </form>
+  </main>

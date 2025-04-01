@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #626465;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #29292b;
+  box-shadow: 0 0 12px -2px black;
+  padding: 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: x-large;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  color: #a11010;
+}
+
+nav {
+  box-shadow: 0 0 12px -2px black;
+  position: static;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: #333333;
+  color: aliceblue;
+  display: flex;
+  height: 80px;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.active {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  min-height: 100vh;
+  padding: 85px 24px 96px;
+  box-shadow: 0 0 12px -2px black;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+main h2 {
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 .5em;
+  border-bottom: 2px solid #ccc;
+}
+
+main .quote {
+  margin-top: 1.5em;
+  font-family: "Brushed";
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+#about-header.quote-two {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 0 0 .5em;
+  text-align: center;
+}
+
+main > p > img {
+  width: 400px;
+  height: 250px;
+  border-radius: 50px;
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+
+section {
+  border-top: 2px solid #bbb;
+  font-size: 16px;
+}
+
+.about-section > p > img {
+  width: 400px;
+  height: 325px;
+  border-radius: 50px;
+  float: right;
+  margin: 10px 10px 10px 10px;
+}
+
+.about-section:nth-of-type(2n) > p > img {
+  width: 400px;
+  height: 325px;
+  border-radius: 50px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.about-section:nth-of-type(3n) > p > img {
+  width: 400px;
+  height: 325px;
+  border-radius: 50px;
+  float: right;
+  margin: 10px 10px 10px 10px;
+}
+
+#about-header {
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 25px;
+  margin-top: .5em;
+}
+
+#project-container {
+  width: calc(100% - 4em);
+  background: #bcbcbc;
+  color: #222;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px -2px #000000;
+  margin: 1em;
+  padding: 2em;
+}
+
+.project {
+  width: calc(100% - 6em);
+  background: #fafafa;
+  color: #222;
+  box-shadow: 0 3px 6px -2px #ccc;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.project:nth-of-type(2n) img {
+  width: 200px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  float: left;
+  box-shadow: 0 3px 6px -2px #ccc;
+}
+
+.project:nth-of-type(2n + 1) img {
+  width: 200px;
+  margin-left: 1em;
+  margin-bottom: em;
+  float: right;
+  box-shadow: 0 3px 6px -2px #ccc;
+}
+
+.project h2 {
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 1em;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: start;
+}
+
+#project-header {
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 .5em;
+  border-bottom: 2px solid #ccc;
+}
+
+main h5 {
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 .5em;
+  border-bottom: 2px solid #ccc;
+}
+
+form {
+  font-size: 25px;
+  max-width: 660px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 15px;
+}
+
+#submit {
+  font-size: 15px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 0 12px -2px black;
+}
+
+@media screen and (max-width: 625px) {
+  .project {
+    width: 100%;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-content img {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main .quote {
+    margin-top: 0;
+  }
+
+  .about-section:nth-of-type(n) > img.about-img {
+    float: unset;
+    margin: unset;
+    width: 100%;
+    height: unset;
+  }
+
+  #form {
+    margin: 0;
+  }
+}
